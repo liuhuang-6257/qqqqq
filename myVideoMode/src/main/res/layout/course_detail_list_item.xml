@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+	<CheckBox
+	   android:visibility="gone"
+	    android:focusable="false"
+	    android:gravity="center"
+	    android:layout_marginLeft="5dp"
+        android:id="@+id/liu_download_checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+    <TextView
+        android:id="@+id/course_head"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" >
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#999999" />
+
+        <ImageView
+            android:id="@+id/if_played"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_v4_huawei_course_progress_playing"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+	<ImageView
+	    android:id="@+id/courseLock"
+	    android:src="@drawable/lock"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:scaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/course_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:lines="2"
+        android:gravity="left|center_vertical"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+
+
+
+    <ImageView
+        android:id="@+id/download_btn"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_download"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:text="ceshi"
+        android:id="@+id/download_text"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:visibility="gone" />
+
+</LinearLayout>
